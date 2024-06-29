@@ -47,7 +47,14 @@
 
   </div>
   <div style="top: 35%;left: 37%;transform: translate(-40%,-40%);">
-    <p style="font-size: 130px;color: rgb(19, 183, 253);">OSIVA</p>
+    <p style="font-size: 130px;color: rgb(19, 183, 253);@keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    .animated-osiva {
+      animation: fadeIn 3s ease-in-out;
+    }">OSIVA</p>
   </div>
   <button id="start_jarvis_btn" class="hide_on_small">
     <img src="https://i.gifer.com/origin/43/434771e3bf841e79abb2d4da70d6b1e2.gif" alt="start jarvis" />

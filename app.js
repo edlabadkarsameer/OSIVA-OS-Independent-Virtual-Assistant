@@ -500,9 +500,8 @@ recognition.onresult = function (event) {
       windowsB.push(a)
     }
 
-    if (transcript.includes("what is you name?")) {
-      readOut("Sir, My name is Oseevaa");
-      database.ref("buttons/button1").set(false);
+    if (transcript.includes("what is your name?")) {
+      readOut("Sir, My name is Ouseevaa");
       windowsB.push(a)
     }
 
@@ -598,10 +597,6 @@ recognition.onresult = function (event) {
       readOut(`here's some headlines on ${input.join("")}`)
       getCategoryNews(input.join(""))
   
-    }
-
-    else{
-      readOut("sorry sir I am not aware of it as it is not in my database")
     }
   }    
 
